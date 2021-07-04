@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.HarianFragment"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/nama_mhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Krisna Dewa Nanda"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/nim_mhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="124190068"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/covidjabar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kasus Covid-19 Jawa Barat"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_harian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/itemlist_harian" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_itemlist_faskes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tv_rsrujukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS Rujukan Covid"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat : "
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tv_rsrujukan"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Alamat"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:layout_below="@+id/tv_rsrujukan"
+            android:layout_toRightOf="@+id/tv_alamat"/>
+
+        <Button
+            android:id="@+id/bt_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamat"
+            android:text="MAPS"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
